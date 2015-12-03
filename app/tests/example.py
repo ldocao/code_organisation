@@ -1,10 +1,23 @@
 # NAME:
 # PURPOSE:
 # COMMENTS:
-import unittest
+
+import pytest
 
 
-class TestName(unittest.TestCase):
-  
-    def test_value1(self):
-        self.assertEqual(myfunction(x), expected_output)
+def func_to_test(a, b):
+    return a+b
+
+
+@pytest.fixture
+def setup_func_to_test():
+    return func_to_test(1,2)
+
+
+
+def test_something(setup_func_to_test):
+    assert setup_func_to_test == 3
+
+
+
+##test with py.test example.py
