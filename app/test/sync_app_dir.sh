@@ -7,7 +7,7 @@
 
 
 basedir="../"
-dir_to_sync="analytics cleaning data setup"
+dir_to_sync="domain infrastructure application interface"
 
 for d in $dir_to_sync
 do
