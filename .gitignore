@@ -1,4 +1,2 @@
-*.csv
-*.json
-*.zip
-*.gz
+__pycache__/
+*.pyc
