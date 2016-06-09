@@ -1,3 +1,3 @@
 #!/bin/bash
 
-export PYTHONPATH=$PYTHONPATH:"absolute_path/to/the/app/dir"
+export PYTHONPATH=$PYTHONPATH:"absolute_path/to/the/project_name/dir"

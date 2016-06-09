@@ -1,9 +1,12 @@
 # code_organisation
 An example of general code organisation for data science projects. 
 
-# usage
-- clone the repo
-- go to setup/pythonpath.sh, and add the app dir (absolute path) to the pythonpath.
-- you can now run any python modules, by importing in the header, something like (don't forget to add `__init__.py`) in each folder to make it accessible:
+# Usage
+1. Clone the repository and change the `project_name` directory name
+2. Modify the `config/pythonpath.sh`, and source it to add `project_name` to your PYTHONPATH
+3. You can now access your functions by importing:
 
-`ìmport domain.subdir.myfile`
+```python
+from project_name.domain.subdir.file_name import function_name
+```
+
