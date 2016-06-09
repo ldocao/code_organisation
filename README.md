@@ -10,16 +10,6 @@ An example of general code organisation for data science projects.
 from project_name.domain.subdir.file_name import function_name
 ```
 
-## Versioning policy
-The basic Version control follows the *code*, and not the data. Thus, `.gitignore` exclude all temporary emacs/python files, and data (eg: `.csv`). In order to version data files (even small ones), you should use git lfs.
-
-1. Follow the [instructions to install git-lfs](https://git-lfs.github.com/)  
-2. `bash$ git lfs track "*.csv"` (kind of opposite of `.gitignore`)  
-3. Use regular git commands (eg: `bash$ git commit file.csv`) to version your data.  
-
-
-
-
 
 ## Folder structure 
 First, the root of your project should separate the documentation, and configuration of your machine from the code itself. README.md contains a short description of your project, while additional documentation lies inside `doc/`. The folder `config/` contains everything related to the local configuration of your machine. The code itself resides in `project_name/` (you should rename it accordingly).
