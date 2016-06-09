@@ -50,7 +50,7 @@ First, the root of your project should separate the documentation, and configura
 
 where each part should be as isolated as possible.
 
-![alt text](content/domain_driven_design.png "Architecture of the project based on DDD, with the casual data science blocks.").
+![alt text](doc/content/domain_driven_design.png "Architecture of the project based on DDD, with the casual data science blocks.").
 
 with an additional folder:
 
