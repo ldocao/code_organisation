@@ -11,6 +11,7 @@ from project_name.domain.subdir.file_name import function_name
 ```
 
 4. Configure sonarqube to follow code rules compliance
+
 - Install sonarqube and sonar-scanner (see [instructions](http://docs.sonarqube.org/display/SONAR/Get+Started+in+Two+Minutes))
 - Download and install python plugin (steps are described [here](http://docs.sonarqube.org/display/PLUG/Python+Plugin))
 - Run MySQL, sonarqube and sonar-scanner (see instructions above)
@@ -63,7 +64,7 @@ Note that you should *not* put all your data into a separate directory. You shou
 
 
 ## Version Control
-git : for code
-git flow : even better, impose an architecture of branches (see [here](http://danielkummer.github.io/git-flow-cheatsheet/))
-git-lfs : for data
+- git : for code
+- git flow : even better, impose an architecture of branches (see [here](http://danielkummer.github.io/git-flow-cheatsheet/))
+- git-lfs : for data
 
