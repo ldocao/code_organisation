@@ -21,6 +21,8 @@ from project_name.domain.subdir.file_name import function_name
 First, the root of your project should separate the documentation, and configuration of your machine from the code itself. README.md contains a short description of your project, while additional documentation lies inside `doc/`. The folder `config/` contains everything related to the local configuration of your machine. The code itself resides in `project_name/` (you should rename it accordingly).
 
 ```
+$ tree
+
 ├── LICENCE
 ├── README.md
 ├── config
@@ -60,4 +62,8 @@ Note that you should *not* put all your data into a separate directory. You shou
 - Nouns must always be singular unless it would have a specific meaning.
 
 
+## Version Control
+git : for code
+git flow : even better, impose an architecture of branches (see [here](http://danielkummer.github.io/git-flow-cheatsheet/))
+git-lfs : for data
 
