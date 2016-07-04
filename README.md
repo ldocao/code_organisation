@@ -10,6 +10,12 @@ An example of general code organisation for data science projects.
 from project_name.domain.subdir.file_name import function_name
 ```
 
+4. Configure sonarqube to follow code rules compliance
+- Install sonarqube and sonar-scanner (see [instructions](http://docs.sonarqube.org/display/SONAR/Get+Started+in+Two+Minutes))
+- Download and install python plugin (steps are described [here](http://docs.sonarqube.org/display/PLUG/Python+Plugin))
+- Run MySQL, sonarqube and sonar-scanner (see instructions above)
+- Open a webbrowser at http://localhost:9000/
+
 
 ## Folder structure 
 First, the root of your project should separate the documentation, and configuration of your machine from the code itself. README.md contains a short description of your project, while additional documentation lies inside `doc/`. The folder `config/` contains everything related to the local configuration of your machine. The code itself resides in `project_name/` (you should rename it accordingly).
@@ -50,6 +56,8 @@ Note that you should *not* put all your data into a separate directory. You shou
 
 
 ## File names
-- Files containing at least one function must have a name starting by a verb, then a noun (or adjective+noun), eg: `search_potential_audience.py`. Otherwise, it must be a noun (or adjective+noun), eg: `constants.py`, `formatted_text.py`.
 - You should create one and only one test file per "code" file. They should be named `test_name_of_your_code_file.py`. Folder structure of your `test/` directory must be identical to your `project_name/` directory. 
 - Nouns must always be singular unless it would have a specific meaning.
+
+
+
