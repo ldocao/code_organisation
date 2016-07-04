@@ -1,8 +1,15 @@
 __pycache__/
 *.pyc
-*~
 
+*~
+#*#
 
 *.csv
 *.xlsx
 *.pkl
+*.xls
+
+*.png
+*.jpg
+*.jpeg
+*.pdf
