@@ -5,20 +5,22 @@ This repository is a template for a python data science project.
 ## Main structure
 The root should contain at least the following elements:
 
-- `project/`: a folder named after the project containing the code. Inside, you should follow the code organisation described in [coding.md](https://gitlab.com/quantmetry/guidelines/blob/master/coding.md#folder-structure)
+- `project/`: a folder named after the project containing the code. Inside, you should follow the code organisation described below
 - `README.md`: a markdown file describing very shortly the objective, methods, main results, and how to use the repo
 - `doc/`: folder containing all additional and detailed documentation of your repository.
 - `.gitignore`: list of git ignored files
 
-Optionnally, you may find a `sonar-project.properties` which is a configuration file for the [sonarqube software](https://www.sonarqube.org/), a code quality evaluator. 
+Optionally, you may find a `sonar-project.properties` which is a configuration file for the [sonarqube software](https://www.sonarqube.org/), a code quality evaluator. 
 
 
 ## Code organisation
-Inside `project/`, the code should be organised according to Domain Driven Design:
+Inside `project/`, the code should be organised according to Domain Driven Design (hereafter DDD):
 
--	`infrastructure/`: data collection and technical cleaning, connector to the database-	`domain/`: domain-related cleaning, feature engineering, machine learning algorithm, domain specific knowledge-	`application/`: application orchestrator or API, you may define here the order in which the cleaning processes must be run
--	`interface/`: user interface (eg: javascript front-end)In addition, you will find two folders:
--	`tests/`: unit (functions test), integration (pipeline test), acceptance (expected domain values test), scalability (workload test)
+- `infrastructure/`: data collection and technical cleaning, connector to the database
+- `domain/`: domain-related cleaning, feature engineering, machine learning algorithm, domain specific knowledge
+- `application/`: application orchestrator or API, you may define here the order in which the cleaning processes must be run
+- `interface/`: user interface (eg: javascript front-end)In addition, you will find two folders:
+- `tests/`: unit (functions test), integration (pipeline test), acceptance (expected domain values test), scalability (workload test)
 - `config/`: folder containing all configuration files if you need to deploy your code to another machine
 
 
@@ -45,10 +47,12 @@ warning: `Config` returns a `ConfigParser` object. Please see the [configparser]
 import project.domain.sub_directory.my_file
 ```
 
-En example can be found in `project/domain/machine_learning.py`
+
+### Example
+You don't know how to start ? Check out the python examples scripts inside each folder, starting by `application/main.py`. The goal of the example is to use a `iris.csv` dataset to make a prediction on two new rows using a random forest regressor.
 
 
-## Side effects
+## Version support
 Support for python3.x only
 
 
