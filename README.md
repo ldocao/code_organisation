@@ -19,7 +19,9 @@ Inside `project/`, the code should be organised according to Domain Driven Desig
 - `infrastructure/`: data collection and technical cleaning, connector to the database
 - `domain/`: domain-related cleaning, feature engineering, machine learning algorithm, domain specific knowledge
 - `application/`: application orchestrator or API, you may define here the order in which the cleaning processes must be run
-- `interface/`: user interface (eg: javascript front-end)In addition, you will find two folders:
+- `interface/`: user interface (eg: javascript front-end).
+
+In addition, you will find two folders:
 - `tests/`: unit (functions test), integration (pipeline test), acceptance (expected domain values test), scalability (workload test)
 - `config/`: folder containing all configuration files if you need to deploy your code to another machine
 
