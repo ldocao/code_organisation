@@ -1,6 +1,6 @@
 import pandas as pd
 
-from project.config import Config
+from project.utils.config import Config
 
 
 
