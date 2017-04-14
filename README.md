@@ -19,20 +19,18 @@ Inside `project/`, the code should be organised according to Domain Driven Desig
 - `infrastructure/`: data collection and technical cleaning, connector to the database
 - `domain/`: domain-related cleaning, feature engineering, machine learning algorithm, domain specific knowledge
 - `application/`: application orchestrator or API, you may define here the order in which the cleaning processes must be run
-- `interface/`: user interface (eg: javascript front-end).
+- `interface/`: user interface (eg: javascript front-end). The template includes a dashboard template from [ng2-admin](https://github.com/akveo/ng2-admin)
 
 In addition, you will find two folders:
 - `tests/`: unit (functions test), integration (pipeline test), acceptance (expected domain values test), scalability (workload test)
-- `config/`: folder containing all configuration files if you need to deploy your code to another machine
-
-
+- `utils/`: very generic functions
 
 
 ## How to use ?
 ### Configuration
 - Add the repo directory to your `PYTHONPATH` environment variable (eg: in your `.bashrc`)
 - Change the name of `project/` directory, if necessary
-- Configuration parameters (eg: location of data, API port, database configuration, etc.) should be set into a .ini file inside `project/config/`. You may copy `project/config/template.ini` into a `my_config.ini` which should **not** be committed.
+- Configuration parameters (eg: location of data, API port, database configuration, etc.) should be set into a .ini file inside `project/application/`. You may copy `project/template.ini` into a `my_config.ini` which should **not** be committed.
 - In order to access the configuration parameters, you can use :
 
 ```python
