@@ -1,6 +1,6 @@
 # Template for python project
 ## Purpose
-This repository is a template for a python data science project. 
+This repository is a template for a python data science project.
 
 ## Main structure
 The root should contain at least the following elements:
@@ -10,7 +10,7 @@ The root should contain at least the following elements:
 - `doc/`: folder containing all additional and detailed documentation of your repository.
 - `.gitignore`: list of git ignored files
 
-Optionally, you may find a `sonar-project.properties` which is a configuration file for the [sonarqube software](https://www.sonarqube.org/), a code quality evaluator. 
+Optionally, you may find a `sonar-project.properties` which is a configuration file for the [sonarqube software](https://www.sonarqube.org/), a code quality evaluator.
 
 
 ## Code organisation
@@ -34,14 +34,14 @@ In addition, you will find two folders:
 - In order to access the configuration parameters, you can use :
 
 ```python
-from project.config import Config
+from project.utils.config import Config
 config = Config("template.ini")
 print(config["database"]["password"]) #return 'password_test'
 ```
 
 warning: `Config` returns a `ConfigParser` object. Please see the [configparser](https://docs.python.org/3/library/configparser.html) module documentation for drawbacks (eg: an integer passed into the configuration file will be recognized as a str object)
 
-- Import a python module using : 
+- Import a python module using :
 
 ```python
 import project.domain.sub_directory.my_file
@@ -54,5 +54,3 @@ You don't know how to start ? Check out the python examples scripts inside each 
 
 ## Version support
 Support for python3.x only
-
-
