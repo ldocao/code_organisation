@@ -3,7 +3,11 @@
 *.dat
 *.xls*
 
-
+# IDE
+.idea/   #pycharm settings
+*~   #emacs temp files
+\#*\#  #emacs temp files
+*.swp  #vim temp files
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
