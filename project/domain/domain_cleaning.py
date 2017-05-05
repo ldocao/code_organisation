@@ -1,5 +1,3 @@
-import pandas as pd
-
 from project.infrastructure.technical_cleaning import IrisCleaner
 
 
